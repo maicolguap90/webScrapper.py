@@ -1,8 +1,13 @@
 news_sites:
   eluniversal:
     url: https://www.eluniversal.com.mx/
+    queries:
+      homepage_article_links: '.field-content a'
+      article_body: '.field-name-body'
+      article_title: '.Encabezado-Articulo h1'
   elpais:
     url: https://elpais.com/mexico/
-  elsolTlax:
-    url: https://www.elsoldetlaxcala.com.mx/com
-    
+    queries:
+      homepage_article_links: '.headline a'
+      article_body: ''
+      article_title: ''
