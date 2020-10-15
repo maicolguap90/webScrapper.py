@@ -9,7 +9,7 @@ class NewsPage:
         self._config = config()['news_site'][news_site_uid]
         self._queries = self._config['queries']
         self._html = None
-
+        self.url = url
         self._visit(url)
         
     def _select(self, query_string):
